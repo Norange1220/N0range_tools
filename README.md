@@ -1,17 +1,18 @@
 # N0range_tools
 
-N0range_tools 是一个轻量级、自定制化的渗透测试工具箱,旨在帮助安全研究人员和渗透测试人员更有效地组织和使用他们的工具。
-支持python、java、浏览器打开
-支持添加参数、记录参数打开程序
+N0range_tools 是一个轻量级、自定制化的渗透测试工具箱,旨在帮助安全研究人员和渗透测试人员更有效地组织和使用他们的工具。   
+
+支持python、java、浏览器打开  
+支持添加参数、记录参数打开程序  
 本人不管是安全还是编程都是刚学的小白，大佬轻喷
 
 ##安装方式
-git clone https://github.com/Norange1220/N0range_tools.git
-pip install -r requirements.txt
-python N0range_tools.py
-（保留了命令行，一是如果不想打开的新的终端可以在命令行直接执行，二是方便出错时调试）
-需要先配置好python和java的系统环境变量
-点管理分类→添加新分类
+git clone https://github.com/Norange1220/N0range_tools.git  
+pip install -r  requirements.txt  
+python N0range_tools.py  
+（保留了命令行，一是如果不想打开的新的终端可以在命令行直接执行，二是方便出错时调试）  
+需要先配置好python和java的系统环境变量  
+点管理分类→添加新分类  
 
 
 ## 主要功能
@@ -48,6 +49,7 @@ python N0range_tools.py
 ##使用示例
 添加工具的方式
 工具的名称→工具的路径→工具的打开方式→是否需要参数→是否需要新窗口打开
+
                     1.正常打开     1.默认不添加参数       1.是
                     2.python打开   2.默认添加参数         2.否
                     3.java打开     3.每次打开都输入参数     
@@ -56,36 +58,36 @@ python N0range_tools.py
 有添加系统路径的直接填软件名称就行
 浏览器打开的路径是网址
 
-记事本→notepad.exe→1→1→2
-微信→找到微信的exe路径右键复制完整路径→1→1→2
-当然当作游戏打开工具也是可以的
+记事本→notepad.exe→1→1→2  
+微信→找到微信的exe路径右键复制完整路径→1→1→2  
+当然当作游戏打开工具也是可以的  
 
-冰蝎→冰蝎的路径→3→1→2
-vbs脚本也是选正常打开就可以了
-百度→https://www.baidu.com→4→1→2
+冰蝎→冰蝎的路径→3→1→2   
+vbs脚本也是选正常打开就可以了  
+百度→https://www.baidu.com→4→1→2  
 
-更多用法
-搜主机→nmap→4→1→2→输入固定参数 -sn
-百度一下→https://www.baidu.com/s?wd=→4→3→2
-谷歌一下→https://www.google.com/search?q=→4→3→2
-搜后台→https://www.google.com/search?q=inurl:login+|+inurl:admin+|+inurl:manage+|+inurl:system+site:→4→3→2
-Nessus→https://localhost:8834→4→1→2
-佛法→https://fofa.info/result?qbase64=→4→3→2
-等等等等，剩下的各位师傅按自己习惯啦
+更多用法 
+搜主机→nmap→4→1→2→输入固定参数 -sn    
+百度一下→https://www.baidu.com/s?wd=→4→3→2  
+谷歌一下→https://www.google.com/search?q=→4→3→2  
+搜后台→https://www.google.com/search?q=inurl:login+|+inurl:admin+|+inurl:manage+|+inurl:system+site:→4→3→2  
+Nessus→https://localhost:8834→4→1→2  
+佛法→https://fofa.info/result?qbase64=→4→3→2 
+等等等等，剩下的各位师傅按自己习惯啦  
 
-主页还预留了一些空间，可以自己添加一些插件，比如像我加了一些常用的api等等
-也可以直接接入AI
+主页还预留了一些空间，可以自己添加一些插件，比如像我加了一些常用的api等等  
+也可以直接接入AI 
 
 
-直接在extensions文件夹里添加就可以了
-我后面也会写一些插件在plugins项目里
+直接在extensions文件夹里添加就可以了  
+我后面也会写一些插件在plugins项目里  
 
 
 
 ## 注意事项
 
-- 请确保添加的工具路径正确,且您有权限运行这些工具。
-- 添加插件时请谨慎,确保插件来源可靠。
+请确保添加的工具路径正确,且您有权限运行这些工具。
+添加插件时请谨慎,确保插件来源可靠。
 
 ##免责声明
 本工具仅能在取得足够合法授权的企业安全建设中使用，在使用本工具过程中，您应确保自己所有行为符合当地的法律法规。
@@ -98,7 +100,6 @@ Nessus→https://localhost:8834→4→1→2
 
 该工具仅用于学习交流，出现一切后果与本人无关。
 
-0x05 Stargazers over time
 
 ## 贡献
 
