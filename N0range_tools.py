@@ -246,13 +246,14 @@ class PenetrationTestTool:
                 else:
                     subprocess.Popen(command, shell=True)
             elif open_method == "Java打开":
+                cleaned_path = path.replace('"', '')
                 if new_window:
                     if os.name == 'nt':  # Windows
-                        subprocess.Popen(f"start cmd /k java -jar {path} {params} && pause", shell=True)
+                        subprocess.Popen(f'start cmd /k java -jar "{cleaned_path}" {params} && pause', shell=True)
                     else:  # Unix-like systems
-                        subprocess.Popen(f"xterm -e 'java -jar {path} {params}; read -p \"Press Enter to exit...\"'", shell=True)
+                        subprocess.Popen(f"xterm -e 'java -jar \"{cleaned_path}\" {params}; read -p \"Press Enter to exit...\"'", shell=True)
                 else:
-                    subprocess.Popen(["java", "-jar", path] + params.split())
+                    subprocess.Popen(["java", "-jar", cleaned_path] + params.split())
             elif open_method == "浏览器打开":
                 import webbrowser
                 browser = webbrowser.get()
